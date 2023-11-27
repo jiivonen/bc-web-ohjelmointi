@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fi" id="html">
+<head id="head">
+    <meta charset="UTF-8" id="charset">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" id="viewport">
+    <title id="title">DOM-puussa liikkuminen</title>
+    <script src="dom02.js" defer></script>
+</head>
+<body id="body">
+    <div id="hakulomake"><label id="label" for="solmu">Valitse solmu: </label>
+        <select id="solmu">
+            <option value="html">html-tägi</option>
+            <option value="head">head-tägi</option>
+            <option value="charset">meta charset -tägi</option>
+            <option value="viewport">meta viewport -tägi</option>
+            <option value="title">title-tägi</option>
+            <option value="body">body-tägi</option>
+            <option value="hakulomake">hakulomake</option>
+            <option value="label">label</option>
+            <option value="solmu">pudotusvalikko</option>
+            <option value="hae">hakunappi</option>
+            <option value="vanhempi">vanhempien laatikko</option>
+            <option value="lapset">lapsien laatikko</option>
+            <option value="sisarukset">sisarusten laatikko</option>
+        </select>
+        <button id="hae">Hae solmu</button>
+    </div>
+
+    <div id="vanhempi">
+        <h3>Solmun vanhempi</h3>
+        <p></p>
+    </div>
+
+    <div id="lapset">
+        <h3>Solmun lapset</h3>
+        <p></p>
+    </div>
+
+    <div id="edellinen-sisarus">
+        <h3>Solmun edellinen sisarus</h3>
+        <p></p>
+    </div>
+
+    <div id="seuraava-sisarus">
+        <h3>Solmun seuraava sisarus</h3>
+        <p></p>
+    </div>
+
+</body>
+</html>
